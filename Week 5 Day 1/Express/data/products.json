@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 9",
+    "description": "An apple mobile which is nothing like apple",
+    "price": 549,
+    "stock": 94,
+    "category": "mobile"
+  },
+  {
+    "id": 2,
+    "title": "iPhone X",
+    "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+    "price": 899,
+    "stock": 34,
+    "category": "mobile"
+  },
+  {
+    "id": 3,
+    "title": "Samsung Universe 9",
+    "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+    "price": 1249,
+    "stock": 36,
+    "category": "laptop"
+  },
+  {
+    "id": 4,
+    "title": "OPPOF19",
+    "description": "OPPO F19 is officially announced on April 2021.",
+    "price": 280,
+    "stock": 123,
+    "category": "mobile"
+  },
+  {
+    "id": 5,
+    "title": "Huawei P30",
+    "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+    "price": 499,
+    "stock": 32,
+    "category": "mobile"
+  },
+  {
+    "id": 6,
+    "title": "MacBook Pro",
+    "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    "price": 1749,
+    "stock": 83,
+    "category": "laptop"
+  },
+  {
+    "id": 7,
+    "title": "Samsung Galaxy Book",
+    "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    "price": 1499,
+    "stock": 50,
+    "category": "laptop"
+  },
+  {
+    "id": 8,
+    "title": "Microsoft Surface Laptop 4",
+    "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+    "price": 1499,
+    "stock": 68,
+    "category": "laptop"
+  },
+  {
+    "id": 9,
+    "title": "Infinix INBOOK",
+    "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+    "price": 1099,
+    "stock": 96,
+    "category": "laptop"
+  },
+  {
+    "title": "Motorola 10",
+    "description": "A motorola mobile which is nothing like apple. A motorola mobile which is nothing like apple.",
+    "price": 199,
+    "stock": 59,
+    "id": 11,
+    "category": "mobile"
+  },
+  {
+    "title": "Motorola 12",
+    "description": "A motorola mobile which is nothing like apple. A motorola mobile which is nothing like apple.",
+    "price": 112,
+    "stock": 10,
+    "id": 12,
+    "category": "mobile"
+  }
+]
