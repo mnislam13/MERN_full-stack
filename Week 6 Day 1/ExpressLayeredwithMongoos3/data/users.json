@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "64dc44e87e54fb4d8192add1"
+  },
+  "id": 1,
+  "name": "Tushar",
+  "email": "tushar@gmail.com",
+  "role": "admin",
+  "personal_info": {
+    "age": 22,
+    "address": "Mirpur 11"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc46477e54fb4d8192add2"
+  },
+  "id": 2,
+  "name": "Najrul",
+  "email": "najrul@gmail.com",
+  "role": "customer",
+  "personal_info": {
+    "age": 18,
+    "address": "Shahbag"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc46477e54fb4d8192add3"
+  },
+  "id": 3,
+  "name": "Sani",
+  "email": "sani@gmail.com",
+  "role": "customer",
+  "personal_info": {
+    "age": 15,
+    "address": "Badda"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc46477e54fb4d8192add4"
+  },
+  "id": 4,
+  "name": "Abir",
+  "email": "abir@gmail.com",
+  "role": "customer",
+  "personal_info": {
+    "age": 14,
+    "address": "ECB"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc46477e54fb4d8192add5"
+  },
+  "id": 5,
+  "name": "Sanjay",
+  "email": "sanjay@gmail.com",
+  "role": "customer",
+  "personal_info": {
+    "age": 19,
+    "address": "Uttara"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc46477e54fb4d8192add6"
+  },
+  "id": 6,
+  "name": "Sumit",
+  "email": "sumit@gmail.com",
+  "role": "customer",
+  "personal_info": {
+    "age": 29,
+    "address": "Uttara"
+  }
+},
+{
+  "_id": {
+    "$oid": "64dc5a707e54fb4d8192add7"
+  },
+  "id": 7,
+  "name": "Sabbir",
+  "email": "sabbir@gmail.com",
+  "role": "supplier",
+  "personal_info": {
+    "age": 32,
+    "address": "Mugda"
+  }
+}]
