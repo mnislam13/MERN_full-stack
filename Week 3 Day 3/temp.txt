@@ -1,0 +1,96 @@
+{id:3, name:"Sani", email:"sani@gmail.com", role:"customer"},
+{id:4, name:"Abir", email:"abir@gmail.com", role:"customer"},
+{id:5, name:"Sanjay", email:"sanjay@gmail.com", role:"customer"},
+{id:6, name:"Sumit", email:"sani@gmail.com", role:"customer"},
+
+db.users.insertOne(
+{id:7, name:"Sabbir", email:"sabbir@gmail.com", role:"supplier", personal_info: {age:32, address:"Mugda"}}
+)
+
+
+db.books.insertMany(
+{bookISBN:"978-1954839458", bookname:"Time Machine", author:["H.G. Wells"], genre:"Science fiction", price:"300", stock:20,},
+{bookISBN:"978-0552171892", bookname:"Good Omens", author:["Neil Gaiman", "Terry Pratchett"], genre:"Fantasy Comedy", price:"400", stock:3,},
+{bookISBN:"978-0439064873", bookname:"Harry Potter and the Chamber of Secrets", author:["J. K. Rowling"], genre:"Fantasy", price:"400", stock:5,},
+{bookISBN:"978-1514640371", bookname:"Oliver Twist", author:["Charles Dickens"], genre:"Fiction", price:"300", stock:10,},
+{bookISBN:"978-0553212471", bookname:"Frankenstein", author:["Mary Shelley"], genre:"Horror", price:"600", stock:10,},
+{bookISBN:"978-1338878981", bookname:"Harry Potter and the Deathly Hallows", author:["J. K. Rowling"], genre:"Horror", price:"500", stock:0,},
+{bookISBN:"978-1853260865", bookname:"Dracula", author:["Bram Stoker"], genre:"Horror", price:"350", stock:6,},
+{bookISBN:"‎978-0553593716", bookname:"A Song of Ice and Fire", author:["George R. R. Martin"], genre:"Epic Fantasy", price:"500", stock:4,},
+
+)
+
+
+
+db.orders.insertMany(
+{orderId:1, userId:2, bookISBN:"978-0439064873", bookCount:1, totalBill:500, deliveryDate:ISODate("2023-08-10T14:10:30Z"), orderStatus="Delivered",},
+{orderId:2, userId:6, bookISBN:"978-1853260865", bookCount:1, totalBill:350, deliveryDate:ISODate("2023-08-11T14:10:30Z"), orderStatus="Delivered",},
+{orderId:3, userId:3, bookISBN:"978-1514640371", bookCount:3, totalBill:900, deliveryDate:ISODate("2023-08-17T14:10:30Z"), orderStatus="Not delivered",},
+{orderId:4, userId:6, bookISBN:"978-0553212471", bookCount:1, totalBill:900, deliveryDate:ISODate("2023-08-14T14:10:30Z"), orderStatus="Delivered",},
+)
+db.orders.insertOne(
+{orderId:1, userId:2, bookISBN:"978-0439064873", bookCount:1, totalBill:500, deliveryDate:ISODate("2023-08-10T14:10:30Z"), orderStatus="Delivered"})
+
+
+
+db.orders.insertMany([
+{orderId:1, userId:2, bookISBN:"978-0439064873", bookCount:1, totalBill:500, deliveryDate:ISODate("2023-08-10T14:10:30Z"), orderStatus:"Delivered",},
+{orderId:2, userId:6, bookISBN:"978-1853260865", bookCount:1, totalBill:350, deliveryDate:ISODate("2023-08-11T14:10:30Z"), orderStatus:"Delivered",},
+{orderId:3, userId:3, bookISBN:"978-1514640371", bookCount:3, totalBill:900, deliveryDate:ISODate("2023-08-17T14:10:30Z"), orderStatus:"Not delivered",},
+{orderId:4, userId:6, bookISBN:"978-0553212471", bookCount:1, totalBill:900, deliveryDate:ISODate("2023-08-14T14:10:30Z"), orderStatus:"Delivered",},
+
+])
+
+
+
+::::::::::::: regex usecase with insensitive option ::::
+::::::::::::: using or,and,not,nor in one query ::::
+db.books.find(
+{$or:
+  [
+	{$and:[{genre: {$regex:"fiction", $options:"i"}},{stock:{$not:{$lte:0}}}]},
+  	{$nor:[{genre:{$regex:"fantasy", $options:"i"}},{stock:{$lte:0}}]}
+]
+}
+)
+
+
+::::::::::::: aggregate and ISODate accessing ::::
+db.orders.aggregate([
+  {$match:{deliveryDate:{$not:{$lt:ISODate("2023-08-13T15:10:30.000+00:00")}}}},
+  {$project:{orderStatus:1,deliveryDate:1,totalBill:{$multiply:["$bookPrice","$bookCount"]}}}
+])
+
+
+
+
+::::::::::::: accessing object instances ::::
+db.users.find(
+{$and:[
+  {"personal_info.age":{$lt:20}},{role:"customer"}
+]}
+)
+
+
+::::::::::::: to find in an array ::::
+db.books.find(
+  {author:{$in:["J. K. Rowling"]}}
+)
+
+
+
+::::::::::::: to find empty array ::::
+db.books.find(
+  {author:{$size:0}}
+)
+
+
+db.books.find(
+{$or: [
+{$and: [{genre:{$regex:"fiction", options:"i"}},{stock:{$not:{$lte:0}}}]},
+{$nor: [{genre:{$regex:"fantasy", options:"i"}},{stock:{$lte:0}}]}
+]
+}
+)
+
+

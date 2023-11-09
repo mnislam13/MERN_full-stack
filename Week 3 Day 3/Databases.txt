@@ -1,0 +1,9 @@
+users:
+id, name, email, role, personal_info{age, address}
+
+books:
+bookISBN, bookname, author[], genre, price, stock,
+
+
+orders:
+orderId, userId, orderedBooks{bookId, bookCount}, orderStatus

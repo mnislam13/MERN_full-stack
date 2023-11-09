@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192add8"
+  },
+  "bookISBN": "978-1954839458",
+  "bookname": "Time Machine",
+  "author": [
+    "H.G. Wells"
+  ],
+  "genre": "Science fiction",
+  "price": "300",
+  "stock": 20
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192add9"
+  },
+  "bookISBN": "978-0552171892",
+  "bookname": "Good Omens",
+  "author": [
+    "Neil Gaiman",
+    "Terry Pratchett"
+  ],
+  "genre": "Fantasy Comedy",
+  "price": "400",
+  "stock": 3
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192adda"
+  },
+  "bookISBN": "978-0439064873",
+  "bookname": "Harry Potter and the Chamber of Secrets",
+  "author": [
+    "J. K. Rowling"
+  ],
+  "genre": "Fantasy",
+  "price": "400",
+  "stock": 5
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192addb"
+  },
+  "bookISBN": "978-1514640371",
+  "bookname": "Oliver Twist",
+  "author": [
+    "Charles Dickens"
+  ],
+  "genre": "Fiction",
+  "price": "300",
+  "stock": 0
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192addc"
+  },
+  "bookISBN": "‎978-0553212471",
+  "bookname": "Frankenstein",
+  "author": [
+    "Mary Shelley"
+  ],
+  "genre": "Horror",
+  "price": "600",
+  "stock": 10
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192addd"
+  },
+  "bookISBN": "978-1338878981",
+  "bookname": "Harry Potter and the Deathly Hallows",
+  "author": [
+    "J. K. Rowling"
+  ],
+  "genre": "Fantasy",
+  "price": "500",
+  "stock": 0
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192adde"
+  },
+  "bookISBN": "978-1853260865",
+  "bookname": "Dracula",
+  "author": [
+    "Bram Stoker"
+  ],
+  "genre": "Horror",
+  "price": "350",
+  "stock": 6
+},
+{
+  "_id": {
+    "$oid": "64dc7df87e54fb4d8192addf"
+  },
+  "bookISBN": "‎978-0553593716",
+  "bookname": "A Song of Ice and Fire",
+  "author": [
+    "George R. R. Martin"
+  ],
+  "genre": "Epic Fantasy",
+  "price": "500",
+  "stock": 4
+},
+{
+  "_id": {
+    "$oid": "64dcacd1dfad0572b8f8e6de"
+  },
+  "author": [],
+  "bookname": "Just Practice"
+}]
