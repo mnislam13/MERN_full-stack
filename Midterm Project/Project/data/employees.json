@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "email": "najrul.islam@gmail.com",
+    "name": "Najrul Islam",
+    "bonus": 2000,
+    "salary": 10000,
+    "department": "executive"
+  },
+  {
+    "id": 2,
+    "email": "sani@gmail.com",
+    "name": "Sani Ullah",
+    "bonus": 500,
+    "salary": 40000,
+    "department": "marketing"
+  },
+  {
+    "id": 3,
+    "email": "sanjay@gmail.com",
+    "name": "Sanjay Saha",
+    "bonus": 1000,
+    "salary": 20000,
+    "department": "sales"
+  },
+  {
+    "id": 3,
+    "email": "abir@gmail.com",
+    "name": "Abir Arafat",
+    "bonus": 1000,
+    "salary": 30000,
+    "department": "sales"
+  },
+  {
+    "id": 4,
+    "email": "tanveer@gmail.com",
+    "name": "Tanveer Ahmed",
+    "bonus": 1200,
+    "salary": 25000,
+    "department": "sales"
+  }
+]
