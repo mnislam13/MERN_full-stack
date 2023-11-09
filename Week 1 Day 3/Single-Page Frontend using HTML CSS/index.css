@@ -1,0 +1,300 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "Poppins", sans-serif;
+    transition: background-color .5s;
+}
+btn{
+    padding: 5px 2px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2{
+    margin: 0px;
+}
+
+
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    position: relative;
+    /* padding: 0 5%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* navbar */
+.banner .navbar {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 20px 8%; 
+    /* overflow: hidden;
+    position: fixed; */
+}
+.logo{
+    width: 80px;
+}
+.banner .navbar a {
+    float: left;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    font-size:large;
+    border: 5px none #fff;
+    border-radius: 10%;
+}
+
+.banner .navbar a:hover {
+    color: black;
+    background-color: #fff;
+    font-size:x-large;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    font-weight: 600;
+    transition: .5s;
+}
+.content h1:hover{   
+    color: #fff;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: .5s;
+}
+.content a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.banner-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+    .banner-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .banner-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* blogs section */
+.featured-box{
+    background-color: antiquewhite; 
+    background: linear-gradient(-45deg, grey, antiquewhite, whitesmoke);
+    /* */
+    padding-bottom: 20px;;
+}
+.allblogs{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    justify-content: center;
+    padding: 0px auto;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+.allblogs .blog-container{
+    /* border: 1px solid blue; */
+    /* background: linear-gradient(-45deg, yellow blue);; */
+    width: 90%;
+    height: 280px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+    position: relative;
+    
+}
+/* .allblogs .blog-container:hover{
+    height: auto;
+} */
+
+.allblogs .blog-container .blog{
+    /* border: 1px dotted pink; */
+    width: 95%;
+    height: 95%;
+    position: relative;
+    background-color: whitesmoke;
+    
+}
+.allblogs .blog-container .blog:hover{
+    width: 100%;
+    height: 100%;
+}
+
+.allblogs .blog-container .blog .blogimage{
+    width: 40%;
+    height: 100%;
+    float: left;
+    animation: _enlighten_ 5s infinite;
+}
+@keyframes _enlighten_ {
+    0%{
+        border-radius: 30%;
+        
+    }
+    10%{
+        border-radius: 20%;
+        
+    }
+    20%{
+        border-radius: 10%;
+        
+    }
+    30%{
+        border-radius: 10%;
+        
+    }
+    40%{
+        border-radius: 0%;
+        
+    }
+    50%{
+        border-radius: 0%;
+    }
+    60%{
+        border-radius: 0%;
+    }
+    70%{
+        border-radius: 10%;
+    }
+    80%{
+        border-radius: 10%;
+    }
+    90%{
+        border-radius: 20%;
+    }
+    100%{
+        border-radius: 30%;
+    }
+    
+}
+.allblogs .blog-container .blog .blog-preview{
+    width: 55%;
+    height: 100%;
+    float: right;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.allblogs .blog-container .blog .blog-preview .post-title{
+    text-decoration: none;
+    color: black;
+    
+}
+.allblogs .blog-container .blog .blog-preview .full-post{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.allblogs .blog-container .blog .blog-preview .full-post:hover{
+    background-color: black;
+    color: #fff;
+}
+/* Review form */
+.review-box{
+    border: 1px solid red;
+    background-image: url( 'image/review.jpg');
+    background-size: cover;
+    
+}
+
+.form{
+    /* border: 1px solid red;
+    background-color: whitesmoke; */
+    padding: 0px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    
+}
+.form .form-row{
+    width: 70%;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: row;
+}
+.form .form-row .form-row-label{
+    width: 30%;
+    text-align: left;
+}
+
+.form .form-row .form-row-input{
+    width: 70%;
+    border-radius: 10px;
+}
+
+
+.form-row-label, .form-row-input, .form-row-button{
+    width: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+.form .form-row .form-row-button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+.form .form-row .form-row-button:hover{
+    background-color: #4CAF50;
+    color: white;
+}
