@@ -1,0 +1,7 @@
+.button-element {
+    font-size: small;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: grey;
+    color: white;
+}

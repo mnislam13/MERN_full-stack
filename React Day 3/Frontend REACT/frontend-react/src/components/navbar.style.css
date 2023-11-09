@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: #00bcd4;
+    /* Change to your desired hover color */
+}
