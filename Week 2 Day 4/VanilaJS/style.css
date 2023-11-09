@@ -1,0 +1,108 @@
+.todo-app {
+    /* background-image: url("bg.jpg"); */
+    background-color: #87CEEB; 
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+.search-form input {
+    height: 20px;
+}
+.search-button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(93, 39, 182);
+}
+.search-button:hover {
+    cursor: pointer;
+}
+
+#delete-all {
+    width: 80px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(219, 9, 9);
+    color: white;
+}
+
+#delete-all:hover {
+    cursor: pointer;
+    background-color: rgb(250, 6, 6);
+}
+
+
+#delete-selected {
+    width: 120px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(219, 51, 9);
+    color: white;
+}
+#delete-selected:hover {
+    cursor: pointer;
+    background-color: rgb(255, 52, 1);
+}
+
+.todo-list {
+    padding: 5px 0px;
+}
+.todo-item {
+    background-color: rgb(103, 146, 202);
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.task-label {
+    flex: 1;
+    font-size: 20px;
+}
+.date-label {
+    font-size: 15px;
+    padding: 5px;
+}
+.edit-task-button {
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(197, 235, 29);
+}
+.edit-task-button:hover {
+    cursor: pointer;
+}
+
+.delete-task-button {
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(235, 29, 29);
+    
+}
+.delete-task-button:hover {
+    cursor: pointer;
+}
+
+.todo-form {
+    margin-bottom: 10px;
+}
+
+.todo-form input {
+    height: 20px;
+}
+
+.add-button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(51, 165, 51);
+}
+.add-button:hover {
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our todo App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="todo-app">
+        <h1>Todo App</h1>
+        <form class="search-form">
+            <input id="search-task-text" type="text" placeholder="Search task..">
+            <button type="search" class="search-button" >search</button>
+        </form>
+        <div class="delete-section">
+
+            <button id="delete-all">delete all</button>
+            <button id="delete-selected">delete selected</button>
+        </div>
+        
+        
+        <div class="todo-list">
+            <div class="todo-item">
+                <input class="item-checkbox" type="checkbox" unchecked>
+                <label class="task-label">Task 1</label>
+                <label class="date-label">8-8-2023</label>
+                <button class="edit-task-button">edit</button>
+                <button class="delete-task-button">x</button>
+            </div>
+            <div class="todo-item">
+                <input class="item-checkbox" type="checkbox">
+                <label class="task-label">Task 2</label>
+                <label class="date-label">9-8-2023</label>
+                <button class="edit-task-button">edit</button>
+                <button class="delete-task-button">x</button>
+            </div>
+        </div>
+        <form class="todo-form">
+            <input id="add-task-text" type="text" placeholder="Add your task here..">
+            <button id="add-task-button" type="submit" class="add-button" >add</button>
+            
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

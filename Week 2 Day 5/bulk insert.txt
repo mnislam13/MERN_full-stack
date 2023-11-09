@@ -1,0 +1,6 @@
+var insertbulk= db.users.initializeOrderedBulkOp();
+
+insertbulk.insert( { id:5, email:"nahid@gmail.com", name:"Nahid" } );
+insertbulk.insert( { id:6, email:"tanveer@gmail.com", name:"Tanveer" } );
+
+insertbulk.execute();

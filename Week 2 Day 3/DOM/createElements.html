@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- <h1 id="ourHeader" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()" style="color: green;">Our first DOM manipulation</h1> -->
+    <!-- <p id="para1">Just a paragraph. Just a paragraph. Just a paragraph.</p> -->
+    <div id="ourDiv2">
+        <h1 id="ourHeader2">Create Element</h1>
+    </div>
+    
+    <button id="clickBtn" onclick="creatingElement()">Click Me!</button>
+
+    
+    
+    <script>
+        const ourHeader2DOM = document.getElementById("ourHeader2");
+        const ourDiv2DOM = document.getElementById("ourDiv2");
+
+
+        function creatingElement() {
+            // const para = document.createElement("p");
+            // para.innerText  = "This element is created afterwards."
+            // para.style.color = "white";
+            // ourDiv2DOM.appendChild(para);
+
+            const divElement = document.createElement("div");
+            divElement.innerText  = "This div is created afterwards."
+            divElement.style.backgroundColor = "red";
+            ourDiv2DOM.appendChild(divElement);
+
+
+
+            // const divElement = document.createElement("div");
+            // divElement.innerText  = "This div is created afterwards."
+            // divElement.style.backgroundColor = "red";
+            // const para = document.createElement("p");
+            // para.innerText  = "This element is created afterwards."
+            // para.style.color = "white";
+
+            // divElement.appendChild(para);
+            // ourDiv2DOM.appendChild(divElement);
+
+            
+
+
+
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- <h1 id="ourHeader" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()" style="color: green;">Our first DOM manipulation</h1> -->
+    <!-- <p id="para1">Just a paragraph. Just a paragraph. Just a paragraph.</p> -->
+    <h1 id="ourHeader2">Fetch Data</h1>
+    <p class="para" id="para2">Fetching data. Fetching data.</p>
+    <p class="para" id="para2">Fetching data. Fetching data.</p>
+    <button id="clickBtn" onclick="getProductData()">Click Me!</button>
+    <h2 id="productTitle"></h2>
+    
+    
+    <script>
+        // const ourHeaderDOM = document.getElementById("ourHeader");
+        // ourHeaderDOM.style.color = "red";
+        // // ourHeaderDOM.style.padding = "10px";
+
+        // const ourPara1DOM = document.getElementById("para1");
+        // ourPara1DOM.style.color = "blue";
+
+        // const ourBtnDOM = document.getElementById("clickBtn");
+        // ourBtnDOM.addEventListener("click", () => {
+        //     console.log("CLick is happening!!!");
+        //     ourHeaderDOM.style.color = "Green";
+        // })
+
+        // function onClickHandler() {
+        //     ourHeaderDOM.style.color = "green";
+        // }
+
+        // function onMouseOver() {
+        //     ourHeaderDOM.style.fontSize = "60px";
+        // }
+        // function onMouseLeave() {
+        //     ourHeaderDOM.style.fontSize = "30px";
+        // }
+        
+        // const ourHeader2DOM = document.getElementById("ourHeader2");
+        // const ourPara2DOM = document.getElementById("para2");
+        // const productTitleDOM = document.getElementById("productTitle");
+
+        // async function getProductData() {
+        //     const response = await fetch("https://dummyjson.com/products/1");
+        //     const productJsonData = await response.json();
+        //     console.log("Data has fetched: ",productJsonData);
+
+        //     productTitleDOM.innerText = productJsonData.title;
+        // }
+
+        const classPara = document.querySelectorAll("para");
+        classPara.style.color = "red";
+
+
+    </script>
+</body>
+</html>
